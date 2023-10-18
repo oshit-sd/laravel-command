@@ -70,7 +70,7 @@ class DatabaseHelper extends Command
         $this->line("--------------------------------------------");
 
         if (config('app.env') == 'production') {
-            $choice = $this->choice('Main options or', ['lists', 'table-column', 'quit'], 2);
+            $choice = $this->choice('Main options or', ['tables', 'table-columns', 'quit'], 2);
         } else {
             $choice = $this->choice('Main options or', [
                 'tables',
